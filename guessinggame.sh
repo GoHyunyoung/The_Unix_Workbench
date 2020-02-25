@@ -1,6 +1,6 @@
 CORRECT=false
 DIR=$(pwd)
-ANSWER=$(ls -p ${DIR}| grep -v ./ | wc -w)
+ANSWER=$(ls -A ${DIR}| wc -w)
 
 function run {
 while [[ ${CORRECT} == false ]]
